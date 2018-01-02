@@ -1,7 +1,10 @@
 The finite potential well has a probability associated with the particle being found outside the box. The probability of finding a particle outside the box, where the energy of the particle is less than the potential energy is non-zero in this quantum situation. This phenomenon is mathematically explained by the time independent Schrödinger equation given by
-<p align="center"><img src="https://rawgit.com/prakrit/scatterWave/None/svgs/ae9a23d45ae078166b745e787010c4cf.svg?invert_in_darkmode" align=middle width=75.382065pt height=15.528117pt/></p>
-<p align="center"><img src="https://rawgit.com/prakrit/scatterWave/None/svgs/49b9cba871fef410e20f9d4e73219b5e.svg?invert_in_darkmode" align=middle width=236.6331pt height=33.67848pt/></p>
-where <img src="https://rawgit.com/prakrit/scatterWave/None/svgs/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode" align=middle width=13.03335pt height=22.38192pt/> is the energy of the particle, <img src="https://rawgit.com/prakrit/scatterWave/None/svgs/7b9a0316a2fcd7f01cfd556eedf72e96.svg?invert_in_darkmode" align=middle width=14.94405pt height=22.38192pt/> is the hamiltonian operator, <img src="https://rawgit.com/prakrit/scatterWave/None/svgs/89f88fd5e2d6e726d71a194719cacbce.svg?invert_in_darkmode" align=middle width=8.848125pt height=22.56408pt/> is the reduced Planck constant, <img src="https://rawgit.com/prakrit/scatterWave/None/svgs/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode" align=middle width=14.379255pt height=14.10255pt/> is the mass of the particle, <img src="https://rawgit.com/prakrit/scatterWave/None/svgs/a9a3a4a202d80326bda413b5562d5cd1.svg?invert_in_darkmode" align=middle width=13.192575pt height=22.38192pt/> is the potential energy and is the wave function. For the finite potential well the wave function is given by
- <p align="center"><img src="https://rawgit.com/prakrit/scatterWave/None/svgs/ab32a0ec871d4e735810df5a63acbbe1.svg?invert_in_darkmode" align=middle width=61.43742pt height=11.190894pt/></p>
- normalization factor. For computational
-purposes, it was necessary to numerically integrate the Schrödinger equation for each energy value to shoot the wave function from left to right. The program offers a graphic interface to the user.
+$$	E\Psi = \hat{H}\Psi$$
+$$ E\Psi(x) = \frac{-\hbar}{2m}\delta^2\Psi(x)+V(x)\Psi(x)$$
+where $E$ is the energy of the particle, $H$ is the hamiltonian operator, $\hbar$ is the reduced Planck constant, $m$ is the mass of the particle, $V$ is the potential energy and is the wave function. For the finite potential well the wave function is given by
+$$\Psi(x)=
+\begin{cases}
+	N \sin(kx)~~~ E>V\\
+	N\exp(\kappa x)~~~ E<V	
+\end{cases}$$
+where $k=\sqrt{E-V}$, $\kappa=\sqrt{V-E}$ and $N$ is the normalization factor. For computational purposes, it was necessary to numerically integrate the Schrödinger equation for each energy value to shoot the wave function from left to right. The program offers a graphic interface to the user.

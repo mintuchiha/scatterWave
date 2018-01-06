@@ -8,3 +8,5 @@ $$\Psi(x)=
 	N\exp(\kappa x)~~~ E<V	
 \end{cases}$$
 where $k=\sqrt{E-V}$, $\kappa=\sqrt{V-E}$ and $N$ is the normalization factor. For computational purposes, it was necessary to numerically integrate the Schrödinger equation for each energy value to shoot the wave function from left to right. The program offers a graphic interface to the user.
+
+![alt text](https://github.com/mintuchiha/scatterWave/blob/master/ScatterWave_mov.gif "Scatter Wave Animation")
